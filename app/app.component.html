@@ -1,0 +1,9 @@
+<h1 class="title">E360 POC</h1>
+<nav> 
+  <a routerLink="/help" routerLinkActive="active">Help</a>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+ </nav>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>

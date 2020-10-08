@@ -1,0 +1,9 @@
+<h3>ADMIN</h3>
+<nav>
+  <a routerLink="./" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+  <a routerLink="./manage-user" routerLinkActive="active">Manage User</a>
+  <a routerLink="./manage-role" routerLinkActive="active">Manage Role</a>
+  <a routerLink="./manage-claim" routerLinkActive="active">Manage Claim</a>
+</nav>
+<router-outlet></router-outlet>

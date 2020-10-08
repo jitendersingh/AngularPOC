@@ -1,0 +1,8 @@
+<h2>LOGIN</h2>
+<p>{{message}}</p>
+<p>
+  UserName:  <input [(ngModel)]="username" >
+  Password:  <input type="password" [(ngModel)]="password" >
+  <button (click)="login()"  *ngIf="!authService.isLoggedIn">Login</button>
+  <button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+</p>
